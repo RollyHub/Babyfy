@@ -35,6 +35,10 @@
   color: #6667aa;
 }
 
+.header__optionLineOne {
+  font-size: 10px;
+}
+
 .header__optionLine {
   font-size: 13px;
   font-weight: 800;
