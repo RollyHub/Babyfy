@@ -3,6 +3,7 @@ import "./Home.css";
 import Trees from "./video/Trees - 24540.mp4"
 import Product from "./Product";
 
+
 function Home() {
   return (
     <div className="home">
@@ -23,18 +24,53 @@ function Home() {
           >
           <source src={Trees} type="video/mp4" />
         </video>}
-
-        <div className="home__row">
-            <Product />
+        <div>
+          <h1 className="topic__One">Välkommen till BABY-FY</h1>
+          <h2 className="topic__Two">För dig som tänker på naturen och barnets bästa</h2>
         </div>
 
         <div className="home__row">
+            <Product 
+              id="12736352"
+              title="Snuttefilt"
+              price={29.99}
+              image= "https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg" />
+            <Product  
+              id="53226743"
+              title="Sängmobil"
+              price={239.0}
+              image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"    />
+            
+        </div>
 
+        <div className="home__row">
+            <Product 
+               id="2782782"
+               title="Sängmobil"
+               price={239.0}
+               image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg" />
+            <Product 
+               id="2378283"
+               title="Sängmobil"
+               price={239.0}
+               image="https://media.very.co.uk/i/very/P6LTG_SQ1_0000000071_CHARCOAL_SLf?$300x400_retinamobilex2$"
+             />
+            <Product
+               id="2382382"
+               title="Sängmobil"
+               price={239.0}
+               image="https://images-na.ssl-images-amazon.com/images/I/816ctt5WV5L._AC_SX385_.jpg"
+              />
 
         </div>
 
         <div className="home__row">
-
+            <Product 
+               id="9492922"
+               title="Sängmobil"
+               price={239.0}
+               image="https://images-na.ssl-images-amazon.com/images/I/6125mFrzr6L._AC_SX355_.jpg"
+             />
           
         </div>
       </div>
