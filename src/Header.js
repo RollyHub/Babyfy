@@ -4,8 +4,10 @@ import logo from "./Pictuers/Pink and Purple Minimalist Baby and Toys Logo .png"
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
+import { useStateValue } from "./StateProvider";
 
 function Header() {
+  const [{ basket }, dispatch] = useStateValue();
   return (
       <div className="header">
        <div className="logo">
@@ -50,7 +52,7 @@ function Header() {
 
         <div className="header__optionBasket">
         <span><FontAwesomeIcon className="basket__opt header__basketCount" 
-        icon={faCartShopping}></FontAwesomeIcon>0</span>
+        icon={faCartShopping}></FontAwesomeIcon>{basket?.length}</span>
         </div>
       </div>
     </div>
