@@ -5,14 +5,18 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faMagnifyingGlass} from "@fortawesome/free-solid-svg-icons";
 import { faCartShopping } from "@fortawesome/free-solid-svg-icons";
 import { useStateValue } from "./StateProvider";
+import {Link} from "react-router-dom";
 
 function Header() {
   const [{ basket }, dispatch] = useStateValue();
-  return (
+
+    return (
       <div className="header">
+        <Link to="/">
        <div className="logo">
           <img src={logo} width="100" height="70" />
         </div>
+        </Link>
         
         <div className="header__search">
             <input
@@ -50,10 +54,12 @@ function Header() {
             </span>
         </div>
 
+        <Link to="/checkout">
         <div className="header__optionBasket">
         <span><FontAwesomeIcon className="basket__opt header__basketCount" 
         icon={faCartShopping}></FontAwesomeIcon>{basket?.length}</span>
         </div>
+        </Link>
       </div>
     </div>
   );
