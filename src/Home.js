@@ -25,8 +25,8 @@ function Home() {
           <source src={Trees} type="video/mp4" />
         </video>}
         <div>
-          <h1 className="topic__One">Välkommen till BABY-FY</h1>
-          <h2 className="topic__Two">För dig som tänker på naturen och barnets bästa</h2>
+          <h1 className="topic__One">Welcome to BABY-FY</h1>
+          <h2 className="topic__Two">For those who think about nature and the best interests of the child</h2>
         </div>
 
         <div className="home__row">
@@ -37,6 +37,11 @@ function Home() {
               image= "https://images-na.ssl-images-amazon.com/images/I/51Zymoq7UnL._AC_SY400_.jpg" />
             <Product  
               id="53226743"
+              title="Sängmobil"
+              price={239.0}
+              image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"    />
+                <Product  
+              id="53226653"
               title="Sängmobil"
               price={239.0}
               image="https://images-na.ssl-images-amazon.com/images/I/71Swqqe7XAL._AC_SX466_.jpg"    />
